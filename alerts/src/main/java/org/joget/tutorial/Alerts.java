@@ -6,7 +6,6 @@ import org.joget.apps.userview.model.UserviewBuilderPalette;
 import org.joget.apps.userview.model.UserviewMenu;
 import org.joget.plugin.base.PluginManager;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
