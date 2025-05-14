@@ -1,0 +1,47 @@
+[
+    {
+        "title": "@@org.joget.tutorial.Alerts.config@@",
+        "properties": [
+            {
+                "name": "alertType",
+                "label": "@@org.joget.tutorial.Alerts.alertType@@",
+                "type": "selectbox",
+                "options": [
+                    { "value": "primary", "label": "Primary" },
+                    { "value": "secondary", "label": "Secondary" },
+                    { "value": "success", "label": "Success" },
+                    { "value": "danger", "label": "Danger" },
+                    { "value": "warning", "label": "Warning" },
+                    { "value": "info", "label": "Info" },
+                    { "value": "light", "label": "Light" },
+                    { "value": "dark", "label": "Dark" }
+                ],
+                "value": "info"
+            },
+            {
+                "name": "title",
+                "label": "@@org.joget.tutorial.Alerts.title@@",
+                "type": "textfield"
+            },
+            {
+                "name": "message",
+                "label": "@@org.joget.tutorial.Alerts.message@@",
+                "type": "textarea",
+                "syntax": "hash_variable"
+            },
+            {
+                "name": "customContent",
+                "label": "@@org.joget.tutorial.Alerts.customContent@@",
+                "type": "textarea",
+                "description": "@@org.joget.tutorial.Alerts.customContent.description@@",
+                "syntax": "hash_variable"
+            },
+            {
+                "name": "icon",
+                "label": "@@org.joget.tutorial.Alerts.icon@@",
+                "type": "textfield",
+                "description": "@@org.joget.tutorial.Alerts.icon.description@@"
+            }
+        ]
+    }
+]

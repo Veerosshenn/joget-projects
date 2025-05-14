@@ -1,0 +1,21 @@
+[{
+    "title" : "@@org.joget.tutorial.ColorDatalistFormatter.config@@",
+    "properties" : [
+    {
+        "name" : "showLabel",
+        "label" : "@@org.joget.tutorial.ColorDatalistFormatter.showLabel@@",
+        "type" : "checkbox",
+        "options" : [{
+            "value" : "true",
+            "label" : ""
+        }]
+    },
+    {
+        "name" : "fontColor",
+        "label" : "@@org.joget.tutorial.ColorDatalistFormatter.fontColor@@",
+        "type" : "color",
+        "control_field": "showLabel",
+        "control_value": "true"
+    }
+    ]
+}]

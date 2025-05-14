@@ -1,0 +1,27 @@
+[{
+    "title" : "@@org.joget.tutorial.classicHTMLMenu.config@@",
+    "properties" : [{
+        "name" : "id",
+        "label" : "Id",
+        "type" : "hidden"
+    },
+    {
+        "name" : "customId",
+        "label" : "@@org.joget.tutorial.classicHTMLMenu.customId@@",
+        "type" : "textfield",
+        "regex_validation" : "^[a-zA-Z0-9_]+$",
+        "validation_message" : "@@org.joget.tutorial.classicHTMLMenu.invalidId@@"
+    },
+    {
+        "name" : "label",
+        "label" : "@@org.joget.tutorial.classicHTMLMenu.label@@",
+        "type" : "textfield",
+        "required" : "True"
+    },    
+    {
+        "name" : "code",
+        "label" : "@@org.joget.tutorial.classicHTMLMenu.code@@",
+        "type" : "codeeditor",
+        "mode" : "html"
+    }]
+}]
