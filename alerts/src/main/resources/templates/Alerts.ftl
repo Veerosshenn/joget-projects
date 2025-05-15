@@ -1,4 +1,4 @@
-<div>
+<div class="p-0 m-0 h-auto">
     <div class="alert alert-${alertType!} d-flex align-items-start p-0 m-0" role="alert" aria-live="assertive" aria-atomic="true">
         <#if icon?? && icon?length gt 0>
             <i class="${icon}" aria-hidden="true"></i>
