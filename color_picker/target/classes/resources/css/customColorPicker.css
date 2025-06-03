@@ -1,0 +1,76 @@
+.clr-sliders-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clr-sliders-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.clr-slider-adjusted {
+    width: calc(100% - 40px);
+}
+
+.clr-slider-adjusted input[type="range"] {
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+.clr-alpha span {
+    position: absolute;
+    top: 0px;
+}
+
+.clr-eyedropper {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clr-eyedropper:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.clr-buttons {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.clr-save, .clr-clear {
+    order: 2;
+    height: 24px;
+    margin: 0 15px 20px !important;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #666;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.clr-picker[data-rtl="true"] .clr-sliders-wrapper {
+    flex-direction: row;
+}
+
+.clr-picker[data-rtl="true"] .clr-eyedropper {
+    order: 1;
+}
+.clr-picker[data-rtl="true"] .clr-sliders-inner {
+    order: 0;
+}
