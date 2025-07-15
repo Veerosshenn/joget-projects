@@ -1,0 +1,45 @@
+.inline-edit-cell {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.inline-edit-cell.editing {
+    display: inline-block;
+    min-width: 150px;
+}
+.inline-edit-cell:hover {
+    background-color: #f0f0f0;
+}
+.inline-edit-cell.inline-edit-saving {
+    opacity: 0.6;
+    background-color: #e0e0e0;
+}
+.inline-edit-cell input,
+.inline-edit-cell select,
+.inline-edit-cell textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 0;
+}
+.inline-edit-error {
+    color: #d32f2f;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px;
+}
+.inline-edit-date {
+    position: relative;
+}
+.inline-edit-date ~ .ui-datepicker-trigger,
+.inline-edit-date ~ .ui-timepicker-trigger {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.ui-datepicker td.ui-datepicker-today a {
+    border-radius: 0 !important;
+}
+
+.ui-datepicker td.ui-datepicker-current-day a {
+    border-radius: 0 !important;
+}

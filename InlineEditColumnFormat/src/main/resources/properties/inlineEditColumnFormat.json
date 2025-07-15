@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Inline Cell Edit Configuration",
+    "properties": [
+      {
+        "name": "fieldType",
+        "label": "@@plugin.inlineEditColumnFormatter.fieldType@@",
+        "type": "selectbox",
+        "options": [
+          {"value": "textfield", "label": "Text"},
+          {"value": "textarea", "label": "Textarea"},
+          {"value": "number", "label": "Number"},
+          {"value": "select", "label": "Select"},
+          {"value": "date", "label": "Date/Time"}
+        ],
+        "required": "true"
+      },
+      {
+        "name": "datePickerType",
+        "label": "@@plugin.inlineEditColumnFormatter.datePickerType@@",
+        "type": "selectbox",
+        "options": [
+          {"value": "date", "label": "Date Only"},
+          {"value": "dateTime", "label": "Date and Time"},
+          {"value": "timeOnly", "label": "Time Only"}
+        ],
+        "required": "true",
+        "value": "date",
+        "control_field": "fieldType",
+        "control_value": "date",
+        "control_use_regex": "false"
+      },
+      {
+        "name": "format",
+        "label": "@@plugin.inlineEditColumnFormatter.format@@",
+        "type": "textfield",
+        "description": "@@plugin.inlineEditColumnFormatter.format.desc@@",
+        "required": "true",
+        "value": "yyyy-MM-dd",
+        "control_field": "fieldType",
+        "control_value": "date",
+        "control_use_regex": "false"
+      },
+      {
+        "name": "options",
+        "label": "@@plugin.inlineEditColumnFormatter.options@@",
+        "type": "grid",
+        "description": "Options for Select fields",
+        "columns": [
+          {"key": "value", "label": "Value"},
+          {"key": "label", "label": "Label"}
+        ],
+        "control_field": "fieldType",
+        "control_value": "select",
+        "control_use_regex": "false"
+      }
+    ]
+  }
+]
